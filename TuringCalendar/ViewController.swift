@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         view.addSubview(pdfView.view)
         pdfView.view.frame = view.bounds
-        pdfView.navigationToolbar.removeFromSuperview()
+        pdfView.navigationToolbar.isHidden = true
+        pdfView.pageScrubber.isHidden = true
 
     }
     
