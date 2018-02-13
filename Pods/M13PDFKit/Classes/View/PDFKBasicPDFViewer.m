@@ -492,7 +492,7 @@
 {
     _document.currentPage = page;
     [_pageScrubber updateScrubber];
-    [_pageCollectionView displayPage:page animated:YES];
+    [_pageCollectionView displayPage:page animated:NO];
     [self resetNavigationToolbar];
 }
 

@@ -35,10 +35,9 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 0.25) {
-            let today = self.getWeekByDate(date: Date())
-            self.pdfView.displayPage(UInt(today))
-        }
+        
+        let today = self.getWeekByDate(date: Date())
+        self.pdfView.displayPage(UInt(today))
     }
     
     func getWeekByDate(date: Date) -> Int {

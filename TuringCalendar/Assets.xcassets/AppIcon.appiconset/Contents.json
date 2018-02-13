@@ -78,9 +78,8 @@
       "scale" : "1x"
     },
     {
-      "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "iPhone App Icon iOS 5,6@2x.png",
+      "size" : "76x76",
       "scale" : "2x"
     },
     {
@@ -91,7 +90,7 @@
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "icon_512x512@2x.png",
+      "filename" : "Group.png",
       "scale" : "1x"
     }
   ],
