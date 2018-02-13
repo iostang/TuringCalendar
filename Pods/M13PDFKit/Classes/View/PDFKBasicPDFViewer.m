@@ -156,7 +156,7 @@
                                                                                             metrics:nil
                                                                                               views:@{@"superview": self.view,
                                                                                                       @"toolbar": _navigationToolbar}] mutableCopy];
-    NSString * v = statusBarHeight == 64 ? @"V:[topLayout]-0-[toolbar(64)]" : @"V:[topLayout]-(-44)-[toolbar(88)]";
+    NSString * v = statusBarHeight == 64 ? @"V:[topLayout]-(-20)-[toolbar(64)]" : @"V:[topLayout]-(-44)-[toolbar(88)]";
     [navigationToolbarConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:v
                                                                                               options:NSLayoutFormatAlignAllLeft
                                                                                               metrics:nil
@@ -364,8 +364,9 @@
     }
     
     [_navigationToolbar setItems:buttonsArray animated:YES];
+    CGFloat statusBarHeight = [[UIApplication sharedApplication] statusBarFrame].size.height + 44;
     for (UIBarButtonItem *item in _navigationToolbar.items) {
-        item.imageInsets = UIEdgeInsetsMake(20, 0, 0, 0);
+        item.imageInsets = UIEdgeInsetsMake(statusBarHeight == 88 ? 20:10, 0, 0, 0);
     }
 }
 
