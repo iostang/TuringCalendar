@@ -543,8 +543,8 @@
 
 - (void)dealloc
 {
-	CGPDFPageRelease(_PDFPageRef), _PDFPageRef = NULL;
-	CGPDFDocumentRelease(_PDFDocRef), _PDFDocRef = NULL;
+    (void)(CGPDFPageRelease(_PDFPageRef)), _PDFPageRef = NULL;
+    (void)(CGPDFDocumentRelease(_PDFDocRef)), _PDFDocRef = NULL;
 }
 
 #pragma mark CATiledLayer delegate methods
